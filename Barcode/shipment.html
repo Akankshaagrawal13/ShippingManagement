@@ -1,0 +1,104 @@
+ <html>
+<title></title>
+<head</head>
+<style>
+table
+{
+ width:150mm;
+ border:1px solid black;
+}
+table.logo
+{
+   height:10mm;
+ }
+table.senderinfo
+{
+height:18mm;
+border-bottom:none;
+
+}
+table.recipientinfo
+{
+  height:29mm;
+  border-bottom:1px solid black;
+  }
+ table.productfeature
+ {
+   height:5mm;
+   border-bottom:1px solid black;
+ }
+ table.shipmentinfo
+ {
+    height:100mm;
+	border-bottom:1px solid black;
+ }
+
+#border-style
+{
+border-bottom-style:none;
+}
+table.parcelidentifierbarcodeblock
+{
+  height:7mm;
+  border-bottom:0px solid black;
+}
+table.softwarerelease
+{
+  height:3mm;
+  border-bottom:1px solid black;
+ }
+ <script>
+     function myFunction()
+	 {
+	     window.print();
+    }
+	    
+
+ </script>
+</style>
+</head>
+<body>
+<button onClick="myFunction()">Print this page</button>
+
+
+
+<table class="logo">
+<tr>
+     <td></td>
+     <td align="center">&nbsp;&nbsp;&nbsp;&nbsp;<b><font size="5"><U>BILL</U></font></b></td>
+	
+<table class="senderinfo" rowspan="7" colspan="4">	  
+<tr>
+      <td><b>From:</b>AkankshaAgrawal</td>
+</tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dilaraam Chowk</td><td align="right"><b>Sender phone:</b>&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rajpur Road</td><td align="right">9876543210&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dehradun</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uttarakhand</td></tr>
+</table>
+<table class="recipientinfo" rowspan="9">
+<tr>
+<td><b>To:</b>&nbsp;&nbsp;{CustomerNo}</td>
+</tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{CustomerName}</td><td align="right"><b>Receiver phone:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Address}</td><td align="right">{MobileNo}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{City}</td><td align="right"><b>Total Amount:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tr></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{OrderId}</td><td align="right">{TotalAmount}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</table>
+<table class="productfeature">
+<tr><td height="5mm" align="center"><b>ORDERLIST</b></td></tr>
+</table>
+{ProductList}
+
+
+<table id="border-style" class="parcelidentifierbarcodeblock">
+<tr><td><img src="ShipmentBarcode.png"></td></tr></table>
+
+<table class="softwarerelease">
+<tr><td>Versandsoftware 2.0</td></tr>
+</table>
+
+</body>	
+	
+	</html>
+	 

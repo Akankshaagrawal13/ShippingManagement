@@ -1,0 +1,103 @@
+ y<html>
+<title></title>
+<head</head>
+<style>
+table
+{
+ width:140mm;
+ border:1px solid black;
+}
+table.logo
+{
+   height:10mm;
+ }
+table.senderinfo
+{
+height:18mm;
+border-bottom:none;
+
+}
+table.recipientinfo
+{
+  height:29mm;
+  border-bottom:1px solid black;
+  }
+ table.productfeature
+ {
+   height:5mm;
+   border-bottom:1px solid black;
+ }
+ table.shipmentinfo
+ {
+    height:100mm;
+	border-bottom:1px solid black;
+ }
+
+#border-style
+{
+border-bottom-style:none;
+}
+table.parcelidentifierbarcodeblock
+{
+  height:38mm;
+  border-bottom:0px solid black;
+}
+table.softwarerelease
+{
+  height:3mm;
+  border-bottom:1px solid black;
+ }
+ 
+</style>
+</head>
+<body>
+<table class="logo">
+<tr>
+     <td></td>
+     <td align="center">&nbsp;&nbsp;&nbsp;&nbsp;<b><font size="5">DHL Packet</font></b></td>
+	 <td align="right"><img src="D:\dhl\dhl1.jpg" alt="dhl1" height="30mm"></td></tr></table>
+<table class="senderinfo" rowspan="7" colspan="4">	  
+<tr>
+      <td>From:AkankshaAgrawal</td>
+</tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dilaraam Chowk</td><td align="right">Sender phone:&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rajpur Road</td><td align="right">9876543210&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dehradun</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uttarakhand</td></tr>
+</table>
+<table class="recipientinfo" rowspan="9">
+<tr>
+<td>To:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{CustomerNo}</td><td align="right">Receiver phone.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{CustomerName}</td><td align="right">{MobileNo}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Address}</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{City}</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{OrderId}</td></tr>
+</table>
+<table class="productfeature">
+<tr width="10"><td align="left" height="5mm" bgcolor="000000"></td></tr>
+</table>
+<table class="shipmentinfo">
+<tr>
+<th>ProductName:</th>
+<th>Quantity</th>
+<th>Price</th>
+</tr>
+<tr>
+<td headers="ProductName">{ProductName}</td>
+<td headers="Quantity">{Qty}</td>
+<td headers="Price">{UnitPrice}</td></tr>
+</table>
+
+<table id="border-style" class="parcelidentifierbarcodeblock">
+<tr><td>{Barcode}</td></tr></table>
+
+<table class="softwarerelease">
+<tr><td>Versandsoftware 2.0</td></tr>
+</table>
+
+</body>	
+	
+	</html>
+	 
